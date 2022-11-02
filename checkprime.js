@@ -1,20 +1,12 @@
-function checkprime(num){
-    let count=0;
-    for(let i=i;i<num;i++){
-        if(num%i!=0){
-            count++;
-        }  
+function check_prime(number){
+    let factor=0;
+    for(let i=1;i<=num;i++){
+        if(num%i==0){
+            return true;
+        }else{
+            return false;
+        }
     }
-    if(count==2){
-       return true;
-    }
-    return false;
-
 }
-
-let a=checkprime(10);
-if(a==true){
-    console.log("Prime number");
-}else{
-    console.log("Not a Prime number");
-}
+let ans=check_prime(17);
+ans==true?console.log("Palindrome"):console.log("NA");
