@@ -1,17 +1,10 @@
-//Palindrome Problem
-
 let str = "madam";
-let lp="";
-let pl="";
-for(i=0;i<str.length;i++){
-    lp+=str[i]
-}
+let bag="";
 for(i=str.length-1;i>=0;i--){
-    pl=pl+str[i]
+    bag+=str[i]
 }
-if(lp==pl){
+if(str==bag){
     console.log("It is Palindrome");
 }
 else{console.log("It is not Palindrome");
 }
-
